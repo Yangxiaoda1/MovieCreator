@@ -1,0 +1,75 @@
+{
+  "character_name": "警察探长",
+  "source_dir": "<WORKSPACE>/Assets/角色/原图/警察探长",
+  "style_rule": "写实真实感电影风格，主体一致性优先；禁止卡通、二次元、插画、玩具感、水印、文字和明显 AI 感。",
+  "identity_locks": [
+    "中年中国男性警察探长/现场指挥官，约45–55岁，威严克制，适合发布命令和现场调度",
+    "宽阔成熟脸型，短寸黑发夹少量灰发，眉眼稳重，下颌坚实，自然肤色，闭口中性表情",
+    "黑色圆领训练衫或警务训练服、深色战术裤、黑色腰带和黑靴；不穿重型密闭装甲",
+    "中等身高，结实体型，肩宽稳定，站姿挺直"
+  ],
+  "forbidden_changes": [
+    "不得变脸、换年龄感、改变体型比例或核心装备轮廓",
+    "不得出现文字、水印、logo、字幕或乱码",
+    "不得卡通化、二次元化、插画化或玩具化"
+  ],
+  "assets": [
+    {
+      "path": "<WORKSPACE>/Assets/角色/三视图/人物/警察探长/警察探长_三视图.png",
+      "asset_type": "三视图参考",
+      "role": "character_three_view_lock",
+      "usage": "锁定角色正面、侧面、背面整体身份、服装、比例和装备轮廓。",
+      "sha256": "a8263d6f531a3c31b92822d28d16866d6132e88f0adc0e732a0cc281ea657672"
+    },
+    {
+      "path": "<WORKSPACE>/Assets/角色/三视图/人物/警察探长/asset_contact_sheet.png",
+      "asset_type": "资产总览",
+      "role": "review_contact_sheet",
+      "usage": "快速检查三视图资产一致性。",
+      "sha256": "a8263d6f531a3c31b92822d28d16866d6132e88f0adc0e732a0cc281ea657672"
+    },
+    {
+      "path": "<WORKSPACE>/Assets/角色/三视图/人物/警察探长/警察探长_正面.png",
+      "asset_type": "正面参考",
+      "role": "character_front_identity_lock",
+      "usage": "锁定正面脸部/头盔、服装、站姿和全身比例。",
+      "sha256": "96a18b9187799378bc362751804d59e2dbc35b35f142bdf402d9e8243d150641"
+    },
+    {
+      "path": "<WORKSPACE>/Assets/角色/三视图/人物/警察探长/警察探长_左侧面.png",
+      "asset_type": "侧面参考",
+      "role": "character_side_body_lock",
+      "usage": "锁定侧脸/侧面轮廓、装备厚度、鞋靴和站姿。",
+      "sha256": "050ff730e7ca0ef79221a294e16ee33a10b5b122dec7e544c127735bdca5a8e8"
+    },
+    {
+      "path": "<WORKSPACE>/Assets/角色/三视图/人物/警察探长/警察探长_背面.png",
+      "asset_type": "背面参考",
+      "role": "character_back_structure_lock",
+      "usage": "锁定背面服装、背负系统、发型或后部结构。",
+      "sha256": "2b619ef94cbc72f935de7e7aca9e23c8d993b9b643b6ebb83cd4d1687ea3bc4e"
+    },
+    {
+      "path": "<WORKSPACE>/Assets/角色/三视图/人物/警察探长/警察探长_脸部近景.png",
+      "asset_type": "脸部近景",
+      "role": "face_or_helmet_detail_lock",
+      "usage": "锁定脸部近景、五官比例、发型、年龄感和皮肤质感。",
+      "sha256": "ff3dae7084edf0147888d35ae41e5370629fbefa6f163eac16d74fba01b2fa40"
+    }
+  ],
+  "voice_assets": [
+    {
+      "path": "<WORKSPACE>/Assets/角色/三视图/人物/警察探长/警察探长_Speech音色参考.wav",
+      "asset_type": "Speech 音色参考",
+      "role": "speech_voice_lock",
+      "usage": "中年男声，低沉、克制、命令式，短停顿清楚，适合警务指挥口吻",
+      "sha256": "9a11fa2575b3d0c7cf0ea81cdd1fdf1d4c24590067680450910d415884c21b1d",
+      "status": "confirmed_reference_from_mission_commander"
+    }
+  ],
+  "scale_reference": {
+    "relative_to_adult_male": 1.0,
+    "note": "中等身高，结实体型，肩宽稳定，站姿挺直"
+  },
+  "status": "asset_pack_built_from_existing_reference_pending_visual_qc"
+}

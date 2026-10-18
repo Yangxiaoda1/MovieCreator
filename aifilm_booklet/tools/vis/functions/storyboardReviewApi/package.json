@@ -1,0 +1,12 @@
+{
+  "name": "storyboard-review-api",
+  "version": "1.0.0",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@cloudbase/node-sdk": "3.18.3"
+  }
+}

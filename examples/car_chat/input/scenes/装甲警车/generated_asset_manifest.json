@@ -1,0 +1,43 @@
+{
+  "scene_name": "装甲警车",
+  "style_rule": "写实真实感电影风格，暗色装甲车材质，主体一致性优先；禁止卡通、二次元、插画、玩具感、水印、文字和明显 AI 感。",
+  "source_references": [
+    {
+      "path": "<WORKSPACE>/Assets/场景/车里/image.png",
+      "role": "vehicle_style_reference",
+      "usage": "提供装甲警车外形、车窗比例、车身厚重感和暗色电影风格参考。"
+    },
+    {
+      "path": "<WORKSPACE>/Assets/角色/三视图/人物/警察探长",
+      "role": "character_reference",
+      "usage": "后排警察探长身份、脸部和服装参考。"
+    },
+    {
+      "path": "<WORKSPACE>/Assets/角色/三视图/人物/中国男1",
+      "role": "character_reference",
+      "usage": "前排中国男1身份、脸部和服装参考。"
+    },
+    {
+      "path": "<WORKSPACE>/Assets/角色/三视图/人物/中国女2",
+      "role": "character_reference",
+      "usage": "后排中国女2身份、脸部和服装参考。"
+    }
+  ],
+  "assets": [
+    {
+      "path": "<WORKSPACE>/Assets/场景/装甲警车/装甲警车_车内内饰_三人座位.png",
+      "asset_type": "车内内饰 / 人物座位参考",
+      "role": "interior_scene_reference",
+      "usage": "锁定装甲警车车内结构、前后排座位关系；中国男1在前排，警察探长和中国女2在后排。",
+      "sha256": "ed224a064ac6becf7fa320549580ddf5b0e9d90d9d81ccdf5611a8675c7b7c46"
+    },
+    {
+      "path": "<WORKSPACE>/Assets/场景/装甲警车/装甲警车_外饰三视图.png",
+      "asset_type": "车辆外饰三视图",
+      "role": "vehicle_exterior_three_view_lock",
+      "usage": "锁定装甲警车正面、侧面、背面外观、比例、轮胎、车窗、警灯和装甲结构。",
+      "sha256": "219372a5ee6110eee2c8c4dfff7f94044811ddae7cedd7372e1fc9bf32c43210"
+    }
+  ],
+  "status": "generated_with_gpt-image-2_pending_visual_qc"
+}

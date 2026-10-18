@@ -1,0 +1,40 @@
+{
+  "_comment": "aifilm 用到的全部开源权重。target 相对 <WORKSPACE>。size 为字节数，用于下载后校验是否完整。",
+  "groups": {
+    "h3": {
+      "desc": "MiniMax-H3 视频+原生 Speech（S08–S12），Turbo LoRA 8 steps",
+      "files": [
+        {"repo": "Comfy-Org/MiniMax-H3", "file": "minimax_h3_fl2va_pruned_int8_convrot.safetensors", "target": "ComfyUI/models/diffusion_models", "size": 20970379616},
+        {"repo": "Comfy-Org/MiniMax-H3", "file": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors", "target": "ComfyUI/models/text_encoders", "size": 15687142551},
+        {"repo": "Comfy-Org/MiniMax-H3", "file": "minimax_h3_video_vae_fp16.safetensors", "target": "ComfyUI/models/vae", "size": 5207808496},
+        {"repo": "Comfy-Org/MiniMax-H3", "file": "minimax_h3_audio_vae_fp32.safetensors", "target": "ComfyUI/models/vae", "size": 605254808},
+        {"repo": "larryvrh/MiniMax-H3-Turbo-Lora", "file": "minimax_h3_turbo_v4_step600_ema.safetensors", "target": "ComfyUI/models/loras", "size": 779849816}
+      ]
+    },
+    "seedvr2": {
+      "desc": "SeedVR2 3B 超分（S14）",
+      "files": [
+        {"repo": "Comfy-Org/SeedVR2", "file": "seedvr2_3b_int8_convrot.safetensors", "target": "ComfyUI/models/diffusion_models", "size": 3458259704},
+        {"repo": "Comfy-Org/SeedVR2", "file": "seedvr2_ema_vae_fp16.safetensors", "target": "ComfyUI/models/vae", "size": 501324814}
+      ]
+    },
+    "ace": {
+      "desc": "ACE-Step 1.5 Turbo 纯器乐配乐（S16）",
+      "files": [
+        {"repo": "Comfy-Org/ace_step_1.5_ComfyUI_files", "file": "acestep_v1.5_turbo.safetensors", "target": "ComfyUI/models/diffusion_models", "size": 4787825604},
+        {"repo": "Comfy-Org/ace_step_1.5_ComfyUI_files", "file": "qwen_0.6b_ace15.safetensors", "target": "ComfyUI/models/text_encoders", "size": 1191588248},
+        {"repo": "Comfy-Org/ace_step_1.5_ComfyUI_files", "file": "qwen_4b_ace15.safetensors", "target": "ComfyUI/models/text_encoders", "size": 8379154232},
+        {"repo": "Comfy-Org/ace_step_1.5_ComfyUI_files", "file": "ace_1.5_vae.safetensors", "target": "ComfyUI/models/vae", "size": 337431732}
+      ]
+    },
+    "foley": {
+      "desc": "HunyuanVideo-Foley XL 环境声/动作声（S15）；首次运行还会从 HF 拉 google/siglip2-base-patch16-512 与 laion/larger_clap_general",
+      "files": [
+        {"repo": "tencent/HunyuanVideo-Foley", "file": "hunyuanvideo_foley_xl.pth", "target": "models/HunyuanVideo-Foley", "size": 5854140970},
+        {"repo": "tencent/HunyuanVideo-Foley", "file": "synchformer_state_dict.pth", "target": "models/HunyuanVideo-Foley", "size": 950058171},
+        {"repo": "tencent/HunyuanVideo-Foley", "file": "vae_128d_48k.pth", "target": "models/HunyuanVideo-Foley", "size": 1486465965}
+      ],
+      "hf_snapshots": ["google/siglip2-base-patch16-512", "laion/larger_clap_general"]
+    }
+  }
+}

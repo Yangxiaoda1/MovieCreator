@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>AI Movie Review</title>
+  <link rel="stylesheet" href="style.css?v=vis-template-v4">
+</head>
+<body>
+  <header class="hero">
+    <nav class="topbar">
+      <a class="brand" href="#top"><span class="brand__mark">VIS</span><span>AI MOVIE / REVIEW</span></a>
+      <div class="topbar__actions">
+        <span id="syncStatus" class="sync-status">正在连接审查服务…</span>
+        <button id="refreshBtn" class="button" type="button">刷新意见</button>
+      </div>
+    </nav>
+    <div id="top" class="hero__content">
+      <div>
+        <p id="eyebrow" class="eyebrow">STORYBOARD REVIEW</p>
+        <h1 id="projectTitle">AI Movie Review</h1>
+        <p id="projectDesc" class="hero__lede">统一展示角色、场景、逐镜参考图和提示词。</p>
+      </div>
+      <div id="projectFacts" class="facts"></div>
+    </div>
+  </header>
+  <main>
+    <section id="finalSection" class="shell panel" hidden>
+      <div class="panel__copy"><p class="eyebrow">FULL PREVIEW</p><h2>成片 / 粗剪预览</h2><p>如已有视频，仅用于对应参考图与提示词查看。</p></div>
+      <div id="finalVideo" class="video-panel"></div>
+    </section>
+    <section class="shell panel">
+      <div class="panel__copy"><p class="eyebrow">ASSETS</p><h2>角色 / 场景 / 道具</h2><p>放置已锁定或待确认的静态参考图。</p></div>
+      <div id="assetList" class="asset-grid"></div>
+    </section>
+    <div class="timeline-wrap"><nav id="timeline" class="timeline shell" aria-label="镜头导航"></nav></div>
+    <section id="shots" class="shots shell" aria-live="polite"><div class="loading">正在载入分镜数据…</div></section>
+    <section class="shell panel final-review">
+      <div><p class="eyebrow">GLOBAL NOTES</p><h2>全片审查意见</h2><p>只记录整体确认或其他说明；逐镜修改请写在对应参考图、参考声音或候选视频下方，提示词正文可直接修改；候选视频可在镜头卡内选择主候选或 Pass。</p></div>
+      <label class="editor editor--large"><span>总体确认 / 其他说明</span><textarea data-note-key="global_review" placeholder="例如：整体确认；或说明需要重点查看的 shot……"></textarea><small class="save-state" data-state-for="global_review">可编辑</small></label>
+    </section>
+  </main>
+  <footer class="footer"><span>AI Movie Review</span><span>意见自动保存到本地或公网 API</span></footer>
+  <script src="cloudbase-config.js?v=vis-template-v4"></script>
+  <script src="app.js?v=vis-template-v4"></script>
+</body>
+</html>

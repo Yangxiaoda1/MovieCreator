@@ -1,0 +1,35 @@
+{
+  "$schema": "https://static.cloudbase.net/cli/cloudbaserc.schema.json",
+  "envId": "your-cloudbase-env-id",
+  "region": "ap-shanghai",
+  "functionRoot": "functions",
+  "functions": [
+    {
+      "name": "storyboardReviewApi",
+      "type": "HTTP",
+      "runtime": "Nodejs20.19",
+      "timeout": 15,
+      "memorySize": 128,
+      "dir": "storyboardReviewApi",
+      "installDependency": true,
+      "description": "Public HTTP API for shared storyboard review notes",
+      "public": true,
+      "envVariables": {
+        "STORYBOARD_CLOUDBASE_ENV_ID": "your-cloudbase-env-id",
+        "STORYBOARD_CLOUDBASE_BUCKET": "your-bucket-name",
+        "STORYBOARD_DEFAULT_DOC_ID": "storyboard-review-demo"
+      }
+    }
+  ],
+  "hosting": [
+    {
+      "name": "storyboard",
+      "root": ".",
+      "framework": "static",
+      "installCommand": "",
+      "buildCommand": "",
+      "outputDir": "public",
+      "deployPath": "/storyboard-review"
+    }
+  ]
+}

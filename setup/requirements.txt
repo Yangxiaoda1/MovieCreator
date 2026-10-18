@@ -1,0 +1,12 @@
+# 主环境 minimaxh3（Python 3.11）在 ComfyUI/requirements.txt 之外额外需要的包。
+# torch 需先按 CUDA 版本单独安装，见 setup/install.sh。
+huggingface_hub>=0.34
+requests
+numpy
+pillow
+opencv-python-headless
+librosa
+soundfile
+openai-whisper==20250625
+scenedetect==0.6.7.1
+yt-dlp
