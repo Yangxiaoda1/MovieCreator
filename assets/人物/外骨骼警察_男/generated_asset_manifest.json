@@ -1,0 +1,95 @@
+{
+  "character_name": "外骨骼警察_男",
+  "character_type": "男性 / 外骨骼警察 / 战术破门手",
+  "style_rule": "写实真实感电影风格，主体一致性优先；禁止卡通、二次元、插画、玩具感、水印、字幕和明显 AI 感。",
+  "source": {
+    "image": "/apdcephfs_gy2/share_302507476/xiaodayang/aimovie/Assets/角色/原图/外骨骼警察_男/breacher_b.png",
+    "source_copy": "/apdcephfs_gy2/share_302507476/xiaodayang/aimovie/Assets/角色/三视图/人物/外骨骼警察_男/source/breacher_b.png",
+    "speech_reference_source": "/apdcephfs_gy2/share_302507476/xiaodayang/aimovie/Assets/角色/三视图/人物/中国男1/中国男1_Speech音色参考_归墟_14s-17s.wav"
+  },
+  "identity_locks": [
+    "成年男性战术破门手体型",
+    "黑色圆顶防弹头盔",
+    "全黑镜面面罩，不露脸",
+    "黑色肩甲和胸甲",
+    "黑色战术服、手套、护膝、战术靴",
+    "黑色突击步枪",
+    "腰侧战术包 / 手枪套 / 大腿挂包",
+    "写实哑光黑色防弹布料与硬质护甲材质"
+  ],
+  "forbidden_changes": [
+    "不得露脸或改变全封闭黑色面罩",
+    "不得换头盔、换服装颜色或删除核心护甲",
+    "不得移除黑色步枪和战术装备逻辑",
+    "不得增加无关文字、logo、水印、字幕或乱码",
+    "不得卡通化、二次元化、插画化、玩具化"
+  ],
+  "assets": [
+    {
+      "path": "/apdcephfs_gy2/share_302507476/xiaodayang/aimovie/Assets/角色/三视图/人物/外骨骼警察_男/00_original_three_view.png",
+      "asset_type": "原始三视图整理参考",
+      "role": "source_three_view_identity_reference",
+      "usage": "保留原图三视图构成，用于整体身份、一致性和后续返修对照。"
+    },
+    {
+      "path": "/apdcephfs_gy2/share_302507476/xiaodayang/aimovie/Assets/角色/三视图/人物/外骨骼警察_男/01_front.png",
+      "asset_type": "正面参考",
+      "role": "character_front_identity_lock",
+      "usage": "锁定正面头盔、黑色面罩、肩甲、胸甲、步枪和正面体型比例。"
+    },
+    {
+      "path": "/apdcephfs_gy2/share_302507476/xiaodayang/aimovie/Assets/角色/三视图/人物/外骨骼警察_男/02_side.png",
+      "asset_type": "侧面参考",
+      "role": "character_side_body_lock",
+      "usage": "锁定侧面轮廓、头盔厚度、胸背装备、腿部比例和战术包位置。"
+    },
+    {
+      "path": "/apdcephfs_gy2/share_302507476/xiaodayang/aimovie/Assets/角色/三视图/人物/外骨骼警察_男/03_back.png",
+      "asset_type": "背面参考",
+      "role": "character_back_structure_lock",
+      "usage": "锁定背部护板、后脑头盔、腰部装备、裤腿和靴子结构。"
+    },
+    {
+      "path": "/apdcephfs_gy2/share_302507476/xiaodayang/aimovie/Assets/角色/三视图/人物/外骨骼警察_男/04_scale.png",
+      "asset_type": "全身比例参考",
+      "role": "scale_reference",
+      "usage": "用于与普通人同框时保持约 1.85m、宽肩厚装的比例。"
+    },
+    {
+      "path": "/apdcephfs_gy2/share_302507476/xiaodayang/aimovie/Assets/角色/三视图/人物/外骨骼警察_男/05_helmet_closeup.png",
+      "asset_type": "头盔 / 上身近景",
+      "role": "helmet_chest_detail_lock",
+      "usage": "锁定圆顶头盔、黑色镜面面罩、肩甲、胸甲和黑色材质细节。"
+    },
+    {
+      "path": "/apdcephfs_gy2/share_302507476/xiaodayang/aimovie/Assets/角色/三视图/人物/外骨骼警察_男/06_breach_pose.png",
+      "asset_type": "关键动作参考",
+      "role": "breach_low_ready_pose_reference",
+      "usage": "用于破门、低备持枪、战术推进等动作镜头。"
+    },
+    {
+      "path": "/apdcephfs_gy2/share_302507476/xiaodayang/aimovie/Assets/角色/三视图/人物/外骨骼警察_男/07_damaged_state.png",
+      "asset_type": "状态变化参考",
+      "role": "light_damaged_dirty_state_reference",
+      "usage": "用于轻度战损、灰尘、擦痕、雨痕等状态变化，但不得改变主体识别点。"
+    },
+    {
+      "path": "/apdcephfs_gy2/share_302507476/xiaodayang/aimovie/Assets/角色/三视图/人物/外骨骼警察_男/asset_contact_sheet.png",
+      "asset_type": "资产总览",
+      "role": "review_contact_sheet",
+      "usage": "快速检查三视图、比例、近景、动作和状态资产的一致性。"
+    },
+    {
+      "path": "/apdcephfs_gy2/share_302507476/xiaodayang/aimovie/Assets/角色/三视图/人物/外骨骼警察_男/audio_references/speech_clean/外骨骼警察_男_Speech音色参考_中国男1_归墟_14s-17s.wav",
+      "asset_type": "Speech 音色参考",
+      "role": "confirmed_male_chinese_speech_voice_reference",
+      "usage": "用户指定的中国男1干净 Speech 音色参考，用于外骨骼警察_男。"
+    }
+  ],
+  "scale_reference": {
+    "height_m": 1.85,
+    "body_type": "成年男性，战术装备后宽肩厚重",
+    "note": "暂定比例，后续镜头可按透视调整，但同景深比例漂移原则上不超过 8%。"
+  },
+  "speech_status": "已使用用户指定的干净 Speech 音色参考；无混合原始音频保留。"
+}

@@ -1,0 +1,75 @@
+{
+  "character_name": "喷火警察",
+  "source_dir": "/apdcephfs_gy2/share_302507476/xiaodayang/aimovie/Assets/角色/原图/喷火警察",
+  "style_rule": "写实真实感电影风格，主体一致性优先；禁止卡通、二次元、插画、玩具感、水印、文字和明显 AI 感。",
+  "identity_locks": [
+    "重装喷火警察/特勤火力成员，负责火焰压制和高危区域清障",
+    "脸部默认被哑光黑密闭头盔和面罩遮挡，身份主要靠装备轮廓、呼吸滤罐、背负气瓶和喷火器锁定",
+    "哑光黑重型防火战术装甲，密闭头盔，圆形红色呼吸滤罐，双气瓶背负系统，耐热软管连接双手喷火器",
+    "高大结实，肩背更厚，背负气瓶使侧面厚度明显增加"
+  ],
+  "forbidden_changes": [
+    "不得变脸、换年龄感、改变体型比例或核心装备轮廓",
+    "不得出现文字、水印、logo、字幕或乱码",
+    "不得卡通化、二次元化、插画化或玩具化"
+  ],
+  "assets": [
+    {
+      "path": "/apdcephfs_gy2/share_302507476/xiaodayang/aimovie/Assets/角色/三视图/人物/喷火警察/喷火警察_三视图.png",
+      "asset_type": "三视图参考",
+      "role": "character_three_view_lock",
+      "usage": "锁定角色正面、侧面、背面整体身份、服装、比例和装备轮廓。",
+      "sha256": "6fc320edf0c8e8fa33b0cc2171a0731fdaac137ec3d4ffeaf673a1926003d3d5"
+    },
+    {
+      "path": "/apdcephfs_gy2/share_302507476/xiaodayang/aimovie/Assets/角色/三视图/人物/喷火警察/asset_contact_sheet.png",
+      "asset_type": "资产总览",
+      "role": "review_contact_sheet",
+      "usage": "快速检查三视图资产一致性。",
+      "sha256": "6fc320edf0c8e8fa33b0cc2171a0731fdaac137ec3d4ffeaf673a1926003d3d5"
+    },
+    {
+      "path": "/apdcephfs_gy2/share_302507476/xiaodayang/aimovie/Assets/角色/三视图/人物/喷火警察/喷火警察_正面.png",
+      "asset_type": "正面参考",
+      "role": "character_front_identity_lock",
+      "usage": "锁定正面脸部/头盔、服装、站姿和全身比例。",
+      "sha256": "41eb8c7c966907ba7acc653643f8cdf729c7b12ae0679dd8504c891f2ec6c77e"
+    },
+    {
+      "path": "/apdcephfs_gy2/share_302507476/xiaodayang/aimovie/Assets/角色/三视图/人物/喷火警察/喷火警察_左侧面.png",
+      "asset_type": "侧面参考",
+      "role": "character_side_body_lock",
+      "usage": "锁定侧脸/侧面轮廓、装备厚度、鞋靴和站姿。",
+      "sha256": "9459375cc58c46f01df12b0446b0e41c67465eadf39bd0f16bc9eecd760e5289"
+    },
+    {
+      "path": "/apdcephfs_gy2/share_302507476/xiaodayang/aimovie/Assets/角色/三视图/人物/喷火警察/喷火警察_背面.png",
+      "asset_type": "背面参考",
+      "role": "character_back_structure_lock",
+      "usage": "锁定背面服装、背负系统、发型或后部结构。",
+      "sha256": "fef14406d568b968886d320bd9bfc614a0a9c4a288fe68561c5d544e547520c0"
+    },
+    {
+      "path": "/apdcephfs_gy2/share_302507476/xiaodayang/aimovie/Assets/角色/三视图/人物/喷火警察/喷火警察_脸部近景.png",
+      "asset_type": "头盔 / 面罩近景",
+      "role": "helmet_mask_detail_lock",
+      "usage": "锁定密闭头盔、红色圆形护目镜、中央呼吸滤罐、黑色面罩材质和软管连接。",
+      "sha256": "8becb6fbd21e3f0d503737ff94fe3689703eb55fd625609cdf4a4ef5e26466b7"
+    }
+  ],
+  "voice_assets": [
+    {
+      "path": "/apdcephfs_gy2/share_302507476/xiaodayang/aimovie/Assets/角色/三视图/人物/喷火警察/喷火警察_Speech音色候选_待确认.wav",
+      "asset_type": "Speech 音色候选",
+      "role": "speech_candidate_pending_confirmation",
+      "usage": "若后续需要对白，建议使用隔面罩的低沉男声；当前源目录音频仅作待确认候选，不视为已锁定音色",
+      "sha256": "9a11fa2575b3d0c7cf0ea81cdd1fdf1d4c24590067680450910d415884c21b1d",
+      "status": "candidate_pending_confirmation"
+    }
+  ],
+  "scale_reference": {
+    "relative_to_adult_male": 1.05,
+    "note": "高大结实，肩背更厚，背负气瓶使侧面厚度明显增加"
+  },
+  "status": "asset_pack_built_from_existing_reference_pending_visual_qc"
+}

@@ -1,0 +1,32 @@
+# 凭据（只提交 setup/aimovie_api.env.example）
+.secrets/
+*.env
+cookies*.txt
+*_cookies.txt
+cloudbaserc.json
+
+# 第三方代码与权重（由 setup/ 脚本安装/下载）
+ComfyUI/
+third_party/
+models/
+.hf_staging/
+*.safetensors
+*.pth
+*.ckpt
+
+# 运行时
+output/
+logs/
+run/
+runs/
+.comfyui_users/
+*.pid
+*.log
+__pycache__/
+*.pyc
+node_modules/
+tmp/
+
+# 本地项目目录（由 setup/new_project.sh 在仓库根下创建）
+/interaction_*/
+/*<*>*/

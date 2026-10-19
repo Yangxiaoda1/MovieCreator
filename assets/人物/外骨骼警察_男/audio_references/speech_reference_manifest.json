@@ -1,0 +1,14 @@
+{
+  "speech_reference_rule": "音色参考只收干净 Speech；本角色使用用户指定的中国男1 Speech 音色参考，不保留混合原始音频。",
+  "items": [
+    {
+      "path": "/apdcephfs_gy2/share_302507476/xiaodayang/aimovie/Assets/角色/三视图/人物/外骨骼警察_男/audio_references/speech_clean/外骨骼警察_男_Speech音色参考_中国男1_归墟_14s-17s.wav",
+      "asset_type": "Speech 音色参考",
+      "role": "confirmed_male_chinese_speech_voice_reference",
+      "source_path": "/apdcephfs_gy2/share_302507476/xiaodayang/aimovie/Assets/角色/三视图/人物/中国男1/中国男1_Speech音色参考_归墟_14s-17s.wav",
+      "duration_sec": 3.0,
+      "status": "confirmed_by_user",
+      "usage": "用于外骨骼警察_男的中文男性 Speech 音色参考；不包含 Sound/Foley。"
+    }
+  ]
+}

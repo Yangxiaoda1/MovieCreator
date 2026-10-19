@@ -32,6 +32,9 @@ aifilm_github/                  ← 即 <WORKSPACE>，所有项目、ComfyUI、�
 │   ├── check_env.py
 │   ├── aimovie_api.env.example
 │   └── requirements.txt
+├── assets/                     可复用角色资产库（规则见 资产建立法则.md）
+│   ├── 资产建立法则.md         Bible、视角参考包、Speech 音色、QC
+│   └── 人物/                   8 个角色，清单见下方「角色资产库」
 └── examples/car_chat/          样例项目《车上聊天》
     ├── input/                  剧本、角色三视图 + 音色参考、场景图
     └── pipeline/               当时实际执行的 6 个核心脚本
@@ -42,6 +45,27 @@ aifilm_github/                  ← 即 <WORKSPACE>，所有项目、ComfyUI、�
 ```text
 ComfyUI/  third_party/  models/  output/  logs/  run/  .secrets/  interaction_xxx<剧名>/
 ```
+
+---
+
+## 角色资产库
+
+[`assets/`](assets/资产建立法则.md) 是跨项目复用的角色包，不绑定某一部短片。新项目开拍前，把要用的角色目录复制到 `input/roles/<角色名>/`。建资产和补图时遵循 [`assets/资产建立法则.md`](assets/资产建立法则.md)：角色 Bible、正/侧/背与三视图、必要时的表情/动作/状态图，以及干净的 Speech 音色。Speech 只收可懂人声；环境声和 Foley 不放在这里。
+
+每个角色一个目录。常规包是 `角色定义.md` + 正面 / 左侧面 / 背面 / 三视图。`外骨骼警察_男` 按法则做成了更完整的一套（Bible、比例、头盔近景、破门动作、战损、contact sheet）。
+
+| 角色 | 视觉 | Speech | 备注 |
+|---|---|---|---|
+| 中国女1 | 四视图 + 角色定义 | 无 | 黑色上衣短裤、德训鞋。鞋款和脸部原图不在本仓库 |
+| 中国女2 | 四视图 + 角色定义 | `南天门计划` 2:16–2:19 | 黑色飞行夹克、白背心、炭黑短裤 |
+| 中国女3 | 四视图 + 角色定义 | 无 | 白衬衫短裙。高跟鞋原图不在本仓库 |
+| 中国男1 | 四视图 + 角色定义 | `归墟` 14–17s | 黑 T、工装长裤、德训鞋 |
+| 外国女1 | 仅四视图 | 无 | 还没有 `角色定义.md`，使用前要补 |
+| 喷火警察 | 四视图 + 头盔近景 + contact sheet | 有候选，**待确认** | 密闭头盔、双气瓶、喷火器。不要把候选 wav 当成已锁定音色 |
+| 警察探长 | 四视图 + 脸部近景 + contact sheet | 已确认 | 约 45–55 岁现场指挥官，黑训练衫、战术裤 |
+| 外骨骼警察_男 | 原三视图、正/侧/背、比例、头盔近景、破门、战损 | 复用中国男1 的归墟片段 | 黑色外骨骼破门手，面罩遮脸。说明见 `character_bible.md` |
+
+音色文件名里带来源和时间码。`喷火警察_Speech音色候选_待确认.wav` 不能当已确认参考。部分角色定义仍指向仓库外的原图路径（`原图/`、德训鞋、高跟鞋，以及 `外骨骼警察_男` 文档里的旧绝对路径）；那些源文件没有放进 `assets/`。
 
 ---
 
@@ -156,7 +180,7 @@ S06 之后每一轮公网批注，按 booklet 的返修规则（读最新 API �
 bash setup/new_project.sh "interaction_10<剧名>"
 ```
 
-1. 角色素材放 `input/roles/<角色名>/`（三视图、正 / 侧 / 背、`角色定义.md`、可选 `*_Speech音色参考*.wav`）
+1. 角色素材放 `input/roles/<角色名>/`（三视图、正 / 侧 / 背、`角色定义.md`、可选 `*_Speech音色参考*.wav`）。可从 [`assets/人物/`](assets/人物) 整目录复制；规则见 [`assets/资产建立法则.md`](assets/资产建立法则.md)
 2. 场景放 `input/scenes/<场景名>/`，其他参考放 `input/other/`
 3. 剧本写 `input/script.md`，末尾保留「严格遵循 `<PROJECT_ROOT>/aifilm_booklet` 中的步骤和规则」
 4. 在项目目录打开 AI 编程助手，发给它：
@@ -195,7 +219,7 @@ bash setup/new_project.sh "interaction_10<剧名>"
 ## 7. 注意事项
 
 - **凭据**：只提交 `setup/aimovie_api.env.example`。`.secrets/`、cookies、`cloudbaserc.json` 都在 `.gitignore` 里。每个项目用独立的 CloudBase `docId`，不要复用别的项目的 `envId`、`apiUrl`、桶名
-- **素材版权**：`examples/car_chat/input/` 里的角色音色参考 wav 截自其他作品，公开发布前请确认授权，或换成自己录的
+- **素材版权**：`examples/car_chat/input/` 和 `assets/人物/` 里带「归墟」「南天门计划」等来源名的 Speech wav 截自其他作品。公开发布前请确认授权，或换成自己录的。`喷火警察` 的 wav 仍是待确认候选
 - **Windows**：项目目录名里的 `<>` 在 Windows 上非法，Windows / WSL 挂载盘上请换成别的命名
 - **术语**：Speech = 可懂人声（只来自 H3 原生）；Sound / Foley = 非人声音效；Music = 配乐；Mix = 最终混音。流程不使用外部 TTS 或口型模型
 
